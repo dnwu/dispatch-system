@@ -1,0 +1,613 @@
+@import url(../../lib/jquery-bootstrap/css/bootstrap.css);
+@import url(../../lib/jquery-paging/paging.css);
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-width: 1098px;
+}
+
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun";
+}
+
+select,
+input {
+  vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font: 12px/150% "microsoft yahei", Arial, Verdana, "\5b8b\4f53";
+  color: #999;
+  background: #F6F6F6;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C81623;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../fonts/icomoon.eot?26cwfx");
+  src: url("../../fonts/icomoon.eot?26cwfx#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?26cwfx") format("truetype"), url("../../fonts/icomoon.woff?26cwfx") format("woff"), url("../../fonts/icomoon.svg?26cwfx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calender:before {
+  content: "\e900";
+  color: #b3b3b3;
+}
+
+.icon-arrows:before {
+  content: "\b04";
+  color: #ccc;
+}
+
+.icon-initialposition:before {
+  content: "\e01";
+  color: #b3b3b3;
+}
+
+.icon-departuretime:before {
+  content: "\e02";
+  color: #808080;
+}
+
+.icon-arrivaltime:before {
+  content: "\e03";
+  color: #808080;
+}
+
+.icon-positionnumber:before {
+  content: "\d01";
+  color: #b3b3b3;
+}
+
+.icon-username:before {
+  content: "\e04";
+  color: #b3b3b3;
+}
+
+.icon-password:before {
+  content: "\e05";
+  color: #b3b3b3;
+}
+
+.icon-back:before {
+  content: "\e06";
+  color: #ccc;
+}
+
+.icon-cargo:before {
+  content: "\a03";
+  color: #000;
+}
+
+.icon-highweight:before {
+  content: "\c04";
+  color: #b3b3b3;
+}
+
+.icon-lowcost:before {
+  content: "\c02";
+  color: #b3b3b3;
+}
+
+.icon-newproject:before {
+  content: "\c01";
+}
+
+.icon-order:before {
+  content: "\a02";
+  color: #000;
+}
+
+.icon-position:before {
+  content: "\a05";
+  color: #000;
+}
+
+.icon-route:before {
+  content: "\a01";
+  color: #000;
+}
+
+.icon-shortmileage:before {
+  content: "\c03";
+  color: #b3b3b3;
+}
+
+.icon-truck:before {
+  content: "\a04";
+  color: #000;
+}
+
+.icon-configuration:before {
+  content: "\b01";
+  color: #ccc;
+}
+
+.icon-expand:before {
+  content: "\e07";
+  color: #b3b3b3;
+}
+
+.icon-search:before {
+  content: "\e15";
+  color: #808080;
+}
+
+.icon-edit:before {
+  content: "\e09";
+  color: #b3b3b3;
+}
+
+.icon-delete:before {
+  content: "\e10";
+  color: #b3b3b3;
+}
+
+.icon-output:before {
+  content: "\b03";
+  color: #000;
+}
+
+.icon-mode:before {
+  content: "\b02";
+  color: #000;
+}
+
+.icon-clock:before {
+  content: "\e11";
+  color: #b3b3b3;
+}
+
+.icon-setting:before {
+  content: "\e12";
+  color: #b3b3b3;
+}
+
+.icon-add:before {
+  content: "\e13";
+  color: #808080;
+}
+
+.icon-export:before {
+  content: "\e14";
+  color: #808080;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #fff;
+}
+
+.header {
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  margin: 10px 0 0 10px;
+  width: 47px;
+  height: 20px;
+}
+.header .userpic {
+  float: right;
+  margin-right: 40px;
+  margin-top: 6px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid #0092ff;
+  background: url("../../img/defult.jpg") center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0092ff;
+}
+
+.aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+  float: left;
+  width: 80px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #f6f8fd;
+  border-right: 1px solid #ccc;
+}
+.aside ul {
+  padding-top: 40px;
+}
+.aside ul li {
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+}
+.aside ul li div {
+  margin: 0 auto;
+}
+.aside ul li .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.aside ul li .icon::before {
+  font-size: 40px;
+}
+.aside ul li .word {
+  position: absolute;
+  font-size: 12px;
+  left: 10px;
+  bottom: 2px;
+  width: 60px;
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+          transform: scale(0.6);
+}
+.aside ul li .arrows {
+  margin: 20px 0;
+}
+.aside ul li .arrows::before {
+  font-size: 20px;
+}
+.aside ul li.active {
+  color: #0092ff;
+}
+.aside ul li.active .icon {
+  border: 1px solid #0092ff;
+}
+.aside ul li.active .icon::before {
+  color: #0092ff;
+}
+.aside ul li.active + li .arrows::before {
+  color: #0092ff;
+}
+
+.main {
+  padding: 40px 0 0 80px;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+.main .top {
+  margin-bottom: 15px;
+}
+.main .top .back {
+  padding: 20px 0 0 20px;
+}
+.main .top .back div {
+  background: -webkit-linear-gradient(85.2deg, #0092ff, #00c3ff);
+  background: linear-gradient(4.8deg, #0092ff, #00c3ff);
+  width: 63px;
+  height: 23px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+  padding: 2px 0 0 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.main .top .back div .icon-back {
+  margin-right: 5px;
+}
+.main .top .back div .icon-back::before {
+  color: white;
+}
+.main .top .search {
+  padding-top: 11px;
+  padding-left: 264px;
+}
+.main .top .search div {
+  display: inline-block;
+}
+.main .top .search label {
+  color: #30b54a;
+  font-size: 14px;
+}
+.main .top .search input {
+  margin-right: 49px;
+  padding-left: 5px;
+  color: #b3b3b3;
+  border: 1px solid #bfbfbf;
+}
+.main .top .search .time {
+  position: relative;
+}
+.main .top .search .time .icon-clock {
+  position: absolute;
+  top: 5px;
+  right: 56px;
+}
+.main .bottom {
+  border-top: 1px solid #d9d9d9;
+  padding: 10px 20px 0;
+}
+.main .bottom .tittle .h3 {
+  margin: 0;
+  font-size: 12px;
+  color: #0092ff;
+}
+.main .bottom .tittle .button div {
+  display: inline-block;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+}
+.main .bottom .tittle .button .search {
+  padding: 0 5px 0 5px;
+}
+.main .bottom .tittle .button .remove {
+  width: 61px;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .bottom .tittle .button .remove:hover {
+  border: 1px solid #ff931e;
+  color: #ff931e;
+}
+.main .bottom .tittle .button .import {
+  width: 61px;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .bottom .tittle .button .import:hover {
+  border: 1px solid #ff931e;
+  color: #ff931e;
+}
+.main .bottom .tittle .button .add {
+  width: 61px;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .bottom .tittle .button .add:hover {
+  border: 1px solid #ff931e;
+  color: #ff931e;
+}
+.main .bottom .list {
+  margin-top: 20px;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0px 0px 10px #bfbfbf;
+}
+.main .bottom .list .listcontent {
+  height: 295px;
+  overflow: auto;
+}
+.main .bottom .list .listcontent ul li {
+  margin: 12px 20px 0 10px;
+  border: 1px solid #bfbfbf;
+}
+.main .bottom .list .listcontent ul li .list-tittle {
+  height: 33px;
+  background-color: #f6f8fd;
+  font-size: 12px;
+  border-bottom: 1px solid #bfbfbf;
+  position: relative;
+  padding-left: 10px;
+}
+.main .bottom .list .listcontent ul li .list-tittle div {
+  display: inline-block;
+}
+.main .bottom .list .listcontent ul li .list-tittle .left {
+  vertical-align: middle;
+}
+.main .bottom .list .listcontent ul li .list-tittle .right {
+  padding-right: 33px;
+  height: 100%;
+}
+.main .bottom .list .listcontent ul li .list-tittle .right span {
+  display: inline-block;
+}
+.main .bottom .list .listcontent ul li .list-tittle .right span::before {
+  font-size: 12px;
+}
+.main .bottom .list .listcontent ul li .list-tittle .right .edit {
+  line-height: 33px;
+  width: 33px;
+  text-align: center;
+}
+.main .bottom .list .listcontent ul li .list-tittle .right .delete {
+  line-height: 33px;
+  width: 33px;
+  text-align: center;
+}
+.main .bottom .list .listcontent ul li .list-tittle .right .icon {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33px;
+  background-color: #fff;
+  height: 31px;
+  text-align: center;
+  line-height: 33px;
+}
+.main .bottom .list .listcontent ul li .message {
+  height: 93px;
+  padding-top: 10px;
+}
+.main .bottom .list .listcontent ul li .message div {
+  display: inline-block;
+}
+.main .bottom .list .listcontent ul li .message .goods-img {
+  vertical-align: top;
+  padding-left: 30px;
+  padding-top: 6px;
+}
+.main .bottom .list .listcontent ul li .message .goods-img img {
+  width: 60px;
+  height: 60px;
+}
+.main .bottom .list .listcontent ul li .message .goodinfo {
+  vertical-align: top;
+  font-size: 12px;
+  margin: 0 20px;
+}
+.main .bottom .list .listcontent ul li .message .time {
+  margin: 0 5px;
+}
+.main .bottom .list .listcontent ul li .message .time p:nth-of-type(2) {
+  margin-bottom: 8px;
+}
+.main .bottom .list .listcontent ul li .message .unsteadytime {
+  margin: 0 8px;
+}
+.main .bottom .list .listcontent ul li .message .unsteadytime p:nth-of-type(2) {
+  margin-bottom: 8px;
+}
+.main .bottom .list .listcontent ul li .message .totaltime {
+  margin: 0 8px;
+}
+.main .bottom .list .listcontent ul li .message .totaltime p:nth-of-type(2) {
+  margin-bottom: 8px;
+}
+.main .bottom .list .listcontent ul li .message .address {
+  margin: 0 8px;
+}
+.main .bottom .list .listcontent ul li .message .address p:nth-of-type(2) {
+  margin-bottom: 8px;
+}
+.main .bottom .list #pageToolbar {
+  margin: 20px 0;
+}
+.main .computed-button {
+  margin: 20px auto;
+  background: -webkit-linear-gradient(85.2deg, #0092ff, #00c3ff);
+  background: linear-gradient(4.8deg, #0092ff, #00c3ff);
+  width: 197px;
+  height: 26px;
+  border-radius: 13px;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  cursor: pointer;
+}

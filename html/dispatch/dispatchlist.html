@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/dispatch/dispatchlist.css">
+    <title>Document</title>
+    <script src="../../lib/jquery-paging/jquery-1.11.2.js"></script>
+    <script src="../../lib/jquery-paging/query.js"></script>
+    <script src="../../lib/jquery-paging/paging.js"></script>
+    <script src="../../lib/jquery-scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><img src="../../img/Logo.png" alt=""></div>
+        <div class="userpic"></div>
+    </div>
+    <!-- <div class="aside">
+        <ul>
+            <li class="active">
+                <div class="icon-route">
+                </div>
+            </li>
+            <li>
+                <div class="icon-order"></div>
+            </li>
+            <li>
+                <div class="icon-cargo"></div>
+            </li>
+            <li>
+                <div class="icon-truck"></div>
+            </li>
+            <li>
+                <div class="icon-position"></div>
+            </li>
+        </ul>
+    </div> -->
+    <div class="main">
+        <div class="top">
+            <div class="icon">
+                <span class="icon-newproject"></span>
+            </div>
+            <div class="button">新建调度方案</div>
+            <div class="directions">
+                <p>使用说明:</p>
+                <p>1、初次使用时，点击“配置”完成货物、位置、车辆基础信息的填写；</p>
+                <p>2、新建调度方案时，先点击“配置”完成订单的输入，可使用一键导入功能；</p>
+                <p>3、完成“配置”步骤，点击“计算方式”，选择调度方案的计算方式；</p>
+                <p>4、完成“计算方式”步骤，点击“输出”，为调度方案命名，计算结束将输出调度方案；</p>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="list">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>调度方案名称</th>
+                            <th>日期</th>
+                            <th>总费用(元)</th>
+                            <th>总里程(km)</th>
+                            <th>车辆数</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">test-05</th>
+                            <td>2017-07-05</td>
+                            <td>10000</td>
+                            <td>245.1</td>
+                            <td>8</td>
+                            <td>已输出</td>
+                            <td><span class="icon-delete"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="pageToolbar"></div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#pageToolbar').Paging({
+        pagesize: 10,
+        count: 85,
+        toolbar: true
+    });
+    // 滚动条
+    $(".bottom .list").mCustomScrollbar()
+</script>
+</script>
+
+</html>

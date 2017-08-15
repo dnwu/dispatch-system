@@ -1,16 +1,43 @@
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
   margin: 0;
   padding: 0;
 }
 
-fieldset, img, input, button {
+html,
+body {
+  min-width: 1098px;
+}
+
+fieldset,
+img,
+input,
+button {
   border: none;
   padding: 0;
   margin: 0;
   outline-style: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -20,13 +47,17 @@ input {
   font-family: "SimSun";
 }
 
-select, input {
+select,
+input {
   vertical-align: middle;
 }
 
-select, input, textarea {
+select,
+input,
+textarea {
   font-size: 12px;
   margin: 0;
+  background-color: #fff;
 }
 
 textarea {
@@ -43,12 +74,13 @@ table {
 }
 
 body {
-  font: 12px/150%  "microsoft yahei",Arial, Verdana, "\5b8b\4f53";
+  font: 12px/150% "microsoft yahei", Arial, Verdana, "\5b8b\4f53";
   color: #999;
   background: #F6F6F6;
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "";
   display: table;
 }
@@ -70,13 +102,20 @@ a:hover {
   color: #C81623;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-decoration: none;
   font-weight: normal;
   font-size: 100%;
 }
 
-s, i, em {
+s,
+i,
+em {
   font-style: normal;
   text-decoration: none;
 }

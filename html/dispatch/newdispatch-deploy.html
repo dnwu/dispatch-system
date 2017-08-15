@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/dispatch/newdispatch-deploy.css">
+    <script src="../../lib/jquery-paging/jquery-1.11.2.js"></script>
+    <script src="../../lib/jquery-paging/query.js"></script>
+    <script src="../../lib/jquery-paging/paging.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><img src="../../img/Logo.png" alt=""></div>
+        <div class="userpic"></div>
+    </div>
+    <div class="aside">
+        <ul>
+            <li class="active">
+                <div class="icon icon-configuration">
+                </div>
+                <div class="word">配置</div>
+            </li>
+            <li>
+                <div class="arrows icon-arrows"></div>
+            </li>
+            <li>
+                <div class="icon icon-mode"></div>
+                <div class="word">计算方式</div>
+            </li>
+            <li>
+                <div class="arrows icon-arrows"></div>
+            </li>
+            <li>
+                <div class="icon icon-output"></div>
+                <div class="word">输出</div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="back">
+                <div><span class="icon-back"></span><span>返回</span></div>
+            </div>
+            <div class="search">
+                <div class="planname">
+                    <label for="planname">方案名称:</label>
+                    <input type="text" id="planname" name="planname" value="" placeholder="请输入内容">
+                </div>
+                <div class="time">
+                    <label for="time">日期:</label>
+                    <input type="text" id="time" name="time" value="" placeholder="请选择日期">
+                    <span class="icon-clock"></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="tittle clearfix">
+                <div class="h3 pull-left">订单列表</div>
+                <div class="button pull-right">
+                    <div class="search">
+                        <input type="text" value="搜索">
+                        <span class="icon-search"></span>
+                    </div>
+                    <div class="remove">
+                        全部删除
+                    </div>
+                    <div class="import">
+                        导入订单
+                    </div>
+                    <div class="add">
+                        添加订单
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="listcontent">
+                    <ul>
+                        <li>
+                            <div class="list-tittle clearfix">
+                                <div class="left pull-left">
+                                    <input type="checkbox">
+                                    <span class="id">213245465767687874</span>
+                                </div>
+                                <div class="right pull-right">
+                                    <span class="edit icon-edit"></span>
+                                    <span class="delete icon-delete"></span>
+                                    <span class="icon icon-expand"></span>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="goods-img">
+                                    <img src="../../img/good-defult.jpg" alt="">
+                                </div>
+                                <div class="goodinfo">
+                                    <p class="goodsid">3123124324</p>
+                                    <p><span>货物A</span>&nbsp;&nbsp;&nbsp;<span>*400件</span></p>
+                                </div>
+                                <div class="time">
+                                    <p>装货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                    <p>卸货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                </div>
+                                <div class="unsteadytime">
+                                    <p>装货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                    <p>卸货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                </div>
+                                <div class="totaltime">
+                                    <p>装货时长:</p>
+                                    <p>20min</p>
+                                    <p>卸货时长:</p>
+                                    <p>20min</p>
+                                </div>
+                                <div class="address">
+                                    <p>装货点地址:</p>
+                                    <p>广东省深圳市南山区前海路3109号</p>
+                                    <p>卸货点地址:</p>
+                                    <p>广东省深圳市罗湖区建设路1003号</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-tittle clearfix">
+                                <div class="left pull-left">
+                                    <input type="checkbox">
+                                    <span class="id">213245465767687874</span>
+                                </div>
+                                <div class="right pull-right">
+                                    <span class="edit icon-edit"></span>
+                                    <span class="delete icon-delete"></span>
+                                    <span class="icon icon-expand"></span>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="goods-img">
+                                    <img src="../../img/good-defult.jpg" alt="">
+                                </div>
+                                <div class="goodinfo">
+                                    <p class="goodsid">3123124324</p>
+                                    <p><span>货物A</span>&nbsp;&nbsp;&nbsp;<span>*400件</span></p>
+                                </div>
+                                <div class="time">
+                                    <p>装货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                    <p>卸货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                </div>
+                                <div class="unsteadytime">
+                                    <p>装货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                    <p>卸货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                </div>
+                                <div class="totaltime">
+                                    <p>装货时长:</p>
+                                    <p>20min</p>
+                                    <p>卸货时长:</p>
+                                    <p>20min</p>
+                                </div>
+                                <div class="address">
+                                    <p>装货点地址:</p>
+                                    <p>广东省深圳市南山区前海路3109号</p>
+                                    <p>卸货点地址:</p>
+                                    <p>广东省深圳市罗湖区建设路1003号</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-tittle clearfix">
+                                <div class="left pull-left">
+                                    <input type="checkbox">
+                                    <span class="id">213245465767687874</span>
+                                </div>
+                                <div class="right pull-right">
+                                    <span class="edit icon-edit"></span>
+                                    <span class="delete icon-delete"></span>
+                                    <span class="icon icon-expand"></span>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="goods-img">
+                                    <img src="../../img/good-defult.jpg" alt="">
+                                </div>
+                                <div class="goodinfo">
+                                    <p class="goodsid">3123124324</p>
+                                    <p><span>货物A</span>&nbsp;&nbsp;&nbsp;<span>*400件</span></p>
+                                </div>
+                                <div class="time">
+                                    <p>装货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                    <p>卸货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                </div>
+                                <div class="unsteadytime">
+                                    <p>装货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                    <p>卸货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                </div>
+                                <div class="totaltime">
+                                    <p>装货时长:</p>
+                                    <p>20min</p>
+                                    <p>卸货时长:</p>
+                                    <p>20min</p>
+                                </div>
+                                <div class="address">
+                                    <p>装货点地址:</p>
+                                    <p>广东省深圳市南山区前海路3109号</p>
+                                    <p>卸货点地址:</p>
+                                    <p>广东省深圳市罗湖区建设路1003号</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-tittle clearfix">
+                                <div class="left pull-left">
+                                    <input type="checkbox">
+                                    <span class="id">213245465767687874</span>
+                                </div>
+                                <div class="right pull-right">
+                                    <span class="edit icon-edit"></span>
+                                    <span class="delete icon-delete"></span>
+                                    <span class="icon icon-expand"></span>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="goods-img">
+                                    <img src="../../img/good-defult.jpg" alt="">
+                                </div>
+                                <div class="goodinfo">
+                                    <p class="goodsid">3123124324</p>
+                                    <p><span>货物A</span>&nbsp;&nbsp;&nbsp;<span>*400件</span></p>
+                                </div>
+                                <div class="time">
+                                    <p>装货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                    <p>卸货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                </div>
+                                <div class="unsteadytime">
+                                    <p>装货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                    <p>卸货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                </div>
+                                <div class="totaltime">
+                                    <p>装货时长:</p>
+                                    <p>20min</p>
+                                    <p>卸货时长:</p>
+                                    <p>20min</p>
+                                </div>
+                                <div class="address">
+                                    <p>装货点地址:</p>
+                                    <p>广东省深圳市南山区前海路3109号</p>
+                                    <p>卸货点地址:</p>
+                                    <p>广东省深圳市罗湖区建设路1003号</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-tittle clearfix">
+                                <div class="left pull-left">
+                                    <input type="checkbox">
+                                    <span class="id">213245465767687874</span>
+                                </div>
+                                <div class="right pull-right">
+                                    <span class="edit icon-edit"></span>
+                                    <span class="delete icon-delete"></span>
+                                    <span class="icon icon-expand"></span>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="goods-img">
+                                    <img src="../../img/good-defult.jpg" alt="">
+                                </div>
+                                <div class="goodinfo">
+                                    <p class="goodsid">3123124324</p>
+                                    <p><span>货物A</span>&nbsp;&nbsp;&nbsp;<span>*400件</span></p>
+                                </div>
+                                <div class="time">
+                                    <p>装货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                    <p>卸货时间窗:</p>
+                                    <p>2017-06-06 09:30-11:00</p>
+                                </div>
+                                <div class="unsteadytime">
+                                    <p>装货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                    <p>卸货浮动时间范围:</p>
+                                    <p>±20min</p>
+                                </div>
+                                <div class="totaltime">
+                                    <p>装货时长:</p>
+                                    <p>20min</p>
+                                    <p>卸货时长:</p>
+                                    <p>20min</p>
+                                </div>
+                                <div class="address">
+                                    <p>装货点地址:</p>
+                                    <p>广东省深圳市南山区前海路3109号</p>
+                                    <p>卸货点地址:</p>
+                                    <p>广东省深圳市罗湖区建设路1003号</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pageToolbar"></div>
+            </div>
+        </div>
+        <div class="computed-button">
+            选择计算方式
+        </div>
+    </div>
+</body>
+<script>
+    $('#pageToolbar').Paging({
+        pagesize: 10,
+        count: 85,
+        toolbar: true
+    });
+</script>
+
+</html>
